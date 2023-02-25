@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey form</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            border: none;
+
+        }
+        body{
+            background-image: url(https://shots.codepen.io/leen624/pen/mdLjbbz-512.jpg?version=1664907060);
+            background-repeat: no-repeat;
+            background-attachment:fixed;
+            background-size: cover;
+        }
+
+        
+        .hd{
+            padding: 10px;
+            font-family:sans-serif;
+            width: 550px;
+            margin: 0 auto;
+            color: white;
+            padding: 10px;
+            font-size: larger;
+        }
+        .cont{
+            background-color: #272746;
+            width: 650px;
+            padding: 20px;
+            margin: 0 auto;
+            color:white;
+            padding: 30px;
+            font-size: large;
+            border-radius: 5px;
+            font-family: sans-serif;
+        }
+        .hd1{
+            width: 500px;
+            margin: 0 auto;
+            padding: 5px;
+            gap: 5px;
+            font-family: sans-serif;
+            font-size: xx-large;
+            color: white;
+        }
+        .inp{
+            width: 600px;
+            border-radius: 4px;
+            padding: 5px;
+            
+        }
+        .input{
+            width: 600px;
+            border-radius: 4px;
+            padding: 5px;
+            background-color: #37AF65;
+        }
+    </style>
+</head>
+<body>
+    <form action="get">
+        <h6 class="hd1">free CodeCamp Survey Form</h6>
+        <p class="hd">Thank you for taking the time to help us improve the platform</p>
+    <div class="main">
+
+    <div class="cont">
+       <label for="Name">Name</label>
+       <br>
+       <br>
+       <input class="inp" type="text" name="Name" id="Name" placeholder="Name" required>
+       <br>
+       <br>
+       <label for="email">Email</label><br><br>
+       <input class="inp" type="email" name="email" id="email" placeholder="Email" required>
+       <br>
+       <br>
+       <label for="Age">Age</label><br><br>
+       <input class="inp" type="number" name="Age" id="Age">
+       <br>
+       <br>
+       <label for="Roles">Which option best describes your current role?</label><br><br>
+<select class="inp" name="Roles" id="Roles">Select Your Role Here
+    <option value="Select">Select Here</option>
+<option value="Student">Student</option>
+<option value="Trainer">Trainer</option>
+<option value="Faculity">Faculity</option>
+</select>
+<br><br>
+<label for="Recommendation">Would you recommend freeCodeCamp to a friend?</label><br>
+<input  type="radio" name="Recommendation" id="Definetely">Definetely 
+<br>
+<input  type="radio" name="Recommendation" id="Maybe">Maybe
+<br>
+<input  type="radio" name="Recommendation" id="Not Sure">Not Sure
+<br>
+<br>
+<label for="Applicable things">What would you like to see improved? (Check all that apply)</label><br>
+<input  type="checkbox" name="Front End" id="Front End">Front End <br>
+<input type="checkbox" name="Back End" id="Back end">Back End <br>
+<input type="checkbox" name="Data Visualizaion" id="Data Visualizaion">Data Visualizaion <br>
+<input type="checkbox" name="Videos" id="Videos">Videos <br>
+<input type="checkbox" name="Challanges" id="Challanges">Challanges <br>
+<input type="checkbox" name="Wiki" id="Wiki">Wiki <br>
+<br><br>
+      <label for="favourite feature">what is your favourite feature of free CodeCamp</label><br><br>
+<select class="inp" name="favourite feature" id="favourite feature">Select Your favourite Challange
+    <option value="Select">Select Here</option>
+<option value="Projects">Projects</option>
+<option value="Challanges">Challanges</option>
+<option value="Open Source">Open Source</option>
+</select>
+<br><br>
+<label class="inp" for="Comments">Any Comments And Suggestions</label><br><br>
+<Textarea class="inp" cols="85" rows="10" placeholder="Any Massage Here"></Textarea>
+<br><br>
+<input class="input" type="Submit" value="submit">
+</div>
+</div>
+</form>
+</body>
+</html>
